@@ -5,19 +5,37 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/cloud"
+        android:label="Ricardo"
         android:roundIcon="@drawable/cloud"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/HiddenTitleTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Graphics"></activity>
-        <activity android:name=".Stadistics"></activity>
-        <activity android:name=".Map"></activity>
-        <activity android:name=".Comunication"></activity>
+        <activity   android:name=".Graphics"
+                    android:theme="@style/HiddenTitleTheme"
+                    android:noHistory="true">
+        </activity>
+        <activity   android:name=".Stadistics"
+                    android:theme="@style/HiddenTitleTheme"
+                    android:noHistory="true">
+        </activity>
+        <activity   android:name=".Map"
+                    android:theme="@style/HiddenTitleTheme"
+                    android:noHistory="true">
+        </activity>
+        <activity   android:name=".Comunication"
+                    android:theme="@style/HiddenTitleTheme"
+                    android:noHistory="true">
+        </activity>
+        <activity   android:name=".faq"
+                    android:theme="@style/HiddenTitleTheme"
+                    android:noHistory="true">
+        </activity>
     </application>
 </manifest>

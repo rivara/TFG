@@ -13,12 +13,6 @@ public class Map extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +37,7 @@ public class Map extends AppCompatActivity {
                 //toastMessage("Clicked Button One");
                 Intent intent = new Intent(Map.this, MainActivity.class);
                 startActivity(intent);
+                //intent= findViewById(R.id.mapView);
             }
         });
 

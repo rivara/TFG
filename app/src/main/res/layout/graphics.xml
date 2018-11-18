@@ -10,7 +10,7 @@
         android:layout_width="46dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="2dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="8dp"
         android:src="@drawable/clock" />
 
     <EditText
@@ -19,6 +19,7 @@
         android:layout_height="34dp"
         android:layout_marginLeft="100dp"
         android:ems="10"
+        android:layout_marginTop="8dp"
         android:inputType="textPersonName"
         android:text="Name" />
 
@@ -26,7 +27,7 @@
         android:id="@+id/linechart"
         android:layout_width="750px"
         android:layout_height="600px"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="50dp"/>
 
     <!--<TextView
         android:id="@+id/msgTxt"
@@ -40,7 +41,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="540dp"
         android:background="@drawable/left" />
 
     <Button
@@ -48,14 +49,14 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="160dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="540dp"
         android:background="@drawable/diagram" />
     <Button
         android:id="@+id/btn3"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="300dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="540dp"
         android:background="@drawable/question" />
 
 
