@@ -19,24 +19,10 @@ public class Map extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
         setContentView(R.layout.map);
         Button firstButton = (Button) findViewById(R.id.btnBack);
-
-      //preguntar en stackoverflow como encapsular un mapa
-        // Default google map
-        //get values from bbdd
-        // Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(
-        // "http://maps.google.com/maps?q=loc:51.5, 0.125"));
-
-        // web on_blank
-        //WebView mWebView = (WebView) findViewById(R.id.view);
-        //mWebView.getSettings().setJavaScriptEnabled(true);
-        //mWebView.getSettings().setMinimumFontSize(1);
-        //mWebView.getSettings().setMinimumLogicalFontSize(1);
-        //mWebView.loadUrl("http://www.google.com");
-
+        Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(
+         "http://maps.google.com/maps?q=loc:51.5, 0.125"));
 
 
         firstButton.setOnClickListener(new View.OnClickListener() {
@@ -47,8 +33,6 @@ public class Map extends AppCompatActivity {
 
             }
         });
-
-
 
     }
 }

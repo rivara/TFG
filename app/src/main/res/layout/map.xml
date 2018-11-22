@@ -10,11 +10,11 @@
 
 
 
-   <!-- <com.google.android.gms.maps.MapView
+    <com.google.android.gms.maps.MapView
         android:id="@+id/MapView"
         android:layout_width="288dp"
         android:layout_height="322dp"
-         /> -->
+         />
 
     <Button
         android:id="@+id/btnBack"
@@ -25,11 +25,5 @@
         android:background="@drawable/left" />
 
 
-
-    <WebView
-        android:id="@+id/view"
-        android:layout_marginTop="400dp"
-        android:layout_width="400dp"
-        android:layout_height="400dp" />
 
 </FrameLayout>
