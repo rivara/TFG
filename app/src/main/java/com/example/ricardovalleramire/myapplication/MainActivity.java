@@ -1,6 +1,7 @@
 package com.example.ricardovalleramire.myapplication;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,8 +21,6 @@ public class MainActivity extends AppCompatActivity {
         firstButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Log.d(TAG, "onClick: Clicked Button One!");
-                //toastMessage("Clicked Button One");
                 Intent intent = new Intent(MainActivity.this, Graphics.class);
                 startActivity(intent);
             }
@@ -31,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
         firstButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Log.d(TAG, "onClick: Clicked Button One!");
-                //toastMessage("Clicked Button One");
                 Intent intent = new Intent(MainActivity.this, Stadistics.class);
                 startActivity(intent);
             }
@@ -43,9 +40,8 @@ public class MainActivity extends AppCompatActivity {
         firstButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Log.d(TAG, "onClick: Clicked Button One!");
-                //toastMessage("Clicked Button One");
-                Intent intent = new Intent(MainActivity.this, Map.class);
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(
+                        "http://maps.google.com/maps?q=loc:51.5, 0.125"));
                 startActivity(intent);
             }
         });
@@ -55,10 +51,7 @@ public class MainActivity extends AppCompatActivity {
         firstButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Log.d(TAG, "onClick: Clicked Button One!");
-                //toastMessage("Clicked Button One");
                 Intent intent = new Intent(MainActivity.this, Comunication.class);
-
                 startActivity(intent);
             }
         });
