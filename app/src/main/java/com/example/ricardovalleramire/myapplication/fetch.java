@@ -106,7 +106,7 @@ public class fetch  extends AsyncTask<Void,Void,String> {
 
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
-        // Graphics.data.setText(this.data);
+         Graphics.data.setText(this.data);
 
     }
 }

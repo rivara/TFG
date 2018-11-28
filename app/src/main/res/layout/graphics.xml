@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <ImageView
+   <!-- <ImageView
         android:id="@+id/imgClock"
         android:layout_width="46dp"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
         android:id="@+id/linechart"
         android:layout_width="750px"
         android:layout_height="600px"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"/> -->
 
     <!--<TextView
         android:id="@+id/msgTxt"
@@ -59,7 +59,11 @@
         android:layout_marginTop="540dp"
         android:background="@drawable/question" />
 
-
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
 
 
 </FrameLayout>
