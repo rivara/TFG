@@ -13,9 +13,9 @@ import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
 
-public class httpHandler {
+public class HttpHandler {
 
-    private static final String TAG = httpHandler.class.getSimpleName();
+    private static final String TAG = HttpHandler.class.getSimpleName();
 
     public String makeServiceCall(String reqUrl) {
         String response = null;

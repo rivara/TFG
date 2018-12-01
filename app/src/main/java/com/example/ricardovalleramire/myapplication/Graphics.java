@@ -4,7 +4,9 @@ package com.example.ricardovalleramire.myapplication;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -42,6 +44,7 @@ import static android.content.ContentValues.TAG;
 class Graphics extends AppCompatActivity {
 
     public static TextView data;
+    private String[][] valores;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,13 +57,22 @@ class Graphics extends AppCompatActivity {
         Button firstButton = (Button) findViewById(R.id.json);
         data = (TextView) findViewById(R.id.textView);
         firstButton.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
             @Override
             public void onClick(View view) {
                 //PieChart pieChart = (PieChart) findViewById(R.id.piechart);
-                fetch process = new fetch();
+                Fetch process = new Fetch();
                 process.execute();
-
-
+                try {
+                    valores=process.get();
+                    Graphics.data.setText(valores[Fetch.PRESSURE][0]);
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                    Graphics.data.setText(e.toString());
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                    Graphics.data.setText(e.toString());
+                }
             }
         });
 
