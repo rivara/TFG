@@ -29,7 +29,7 @@
                     android:theme="@style/HiddenTitleTheme"
                     android:noHistory="true">
         </activity>
-        <activity   android:name=".faq"
+        <activity   android:name=".Faq"
                     android:theme="@style/HiddenTitleTheme"
                     android:noHistory="true">
         </activity>

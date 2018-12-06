@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class faq extends AppCompatActivity {
+public class Faq extends AppCompatActivity {
 
 
     @Override
@@ -22,7 +22,7 @@ public class faq extends AppCompatActivity {
             public void onClick(View view) {
                 //Log.d(TAG, "onClick: Clicked Button One!");
                 //toastMessage("Clicked Button One");
-                Intent intent = new Intent(faq.this, MainActivity.class);
+                Intent intent = new Intent(Faq.this, MainActivity.class);
                 startActivity(intent);
                 //intent= findViewById(R.id.mapView);
             }

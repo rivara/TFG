@@ -16,4 +16,8 @@
     <color name="greenPrimary">#008577</color>
     <color name="greenPrimaryDark">#003300</color>
     <color name="greenPrimaryDeepDark">#001a00</color>
+    <!-- BLUE -->
+    <color name="bluePrimary">#0624bb</color>
+    <color name="bluePrimaryDark">#011786</color>
+    <color name="bluePrimaryDeepDark">#000a3d</color>
 </resources>
