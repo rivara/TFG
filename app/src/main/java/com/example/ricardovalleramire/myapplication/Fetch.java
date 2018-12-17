@@ -30,7 +30,7 @@ public class Fetch  extends AsyncTask<Void,Void,String[][]> {
         HttpHandler sh = new HttpHandler();
         // Making a request to url and getting response
         // String url = "http://wezalia.com/tfg/user.json";
-        String url = "http://wezalia.com/tfg/prueba.php";
+        String url = "http://wezalia.com/tfg/datos.php";
         String jsonStr = sh.makeServiceCall(url);
         JSONObject jsonObj = null;
         try {
