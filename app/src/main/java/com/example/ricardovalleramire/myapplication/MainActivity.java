@@ -30,12 +30,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-//stadistics
+//statistics
         Button firstButton2 = (Button) findViewById(R.id.btn2);
         firstButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Stadistics.class);
+                Intent intent = new Intent(MainActivity.this, Statistics.class);
                 startActivity(intent);
             }
         });

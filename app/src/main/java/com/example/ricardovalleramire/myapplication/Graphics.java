@@ -62,9 +62,9 @@ class Graphics extends AppCompatActivity {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        pm.setText(String.valueOf(valores[Fetch.PM2][0])+"ppm");
-        o3.setText(String.valueOf(valores[Fetch.O3][0])+"ppm");
-        co2.setText(String.valueOf(valores[Fetch.CO2][0])+"ppm");
+        pm.setText(String.valueOf(valores[Fetch.PM2][0])+"ug/m3");
+        o3.setText(String.valueOf(valores[Fetch.O3][0])+"ppb");
+        co2.setText(String.valueOf(valores[Fetch.CO2][0])+"ppb ");
         no2.setText(String.valueOf(valores[Fetch.NO2][0])+"ppm");
 
         //PRIMERA ESTADISTICA

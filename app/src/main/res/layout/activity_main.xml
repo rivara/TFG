@@ -26,9 +26,9 @@
         android:layout_height="130dp"
         android:layout_marginLeft="200dp"
         android:layout_marginTop="80dp"
-        android:text="stadistics"
-        android:textColor="@color/greenPrimaryDark"
-        android:background="@drawable/oval"/>
+        android:background="@drawable/oval"
+        android:text="statistics"
+        android:textColor="@color/greenPrimaryDark" />
 
 
     <Button

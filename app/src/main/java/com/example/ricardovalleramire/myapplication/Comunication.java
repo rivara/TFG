@@ -23,4 +23,7 @@ public class Comunication extends AppCompatActivity {
             }
         });
     }
+
+    public static class Statistics2 {
+    }
 }
