@@ -67,15 +67,6 @@ public class MainActivity extends AppCompatActivity {
 
 //comunicacion
         Button firstButton4 = (Button) findViewById(R.id.btn4);
-   /*     firstButton4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Comunication.class);
-                startActivity(intent);
-            }
-        });
-        */
-
         firstButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
