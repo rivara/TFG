@@ -1,5 +1,6 @@
 package com.example.ricardovalleramire.myapplication;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
@@ -66,13 +67,30 @@ public class MainActivity extends AppCompatActivity {
 
 //comunicacion
         Button firstButton4 = (Button) findViewById(R.id.btn4);
-        firstButton4.setOnClickListener(new View.OnClickListener() {
+   /*     firstButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Comunication.class);
                 startActivity(intent);
             }
         });
+        */
+
+        firstButton4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri marketUri = Uri.parse("market://details?id=com.skype.raider");
+                Intent myIntent = new Intent(Intent.ACTION_VIEW, marketUri);
+                myIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(myIntent);
+                return;
+
+            }
+        });
+
+
+
+
 
 
     }

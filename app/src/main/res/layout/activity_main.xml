@@ -47,9 +47,9 @@
         android:layout_height="130dp"
         android:layout_marginLeft="200dp"
         android:layout_marginTop="250dp"
-        android:text="comunication"
-        android:textColor="@color/greenPrimaryDark"
-        android:background="@drawable/oval"/>
+        android:background="@drawable/oval"
+        android:text="skype"
+        android:textColor="@color/greenPrimaryDark" />
 
     <Button
         android:id="@+id/button"

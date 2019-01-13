@@ -25,10 +25,7 @@
                     android:theme="@style/HiddenTitleTheme"
                     android:noHistory="true">
         </activity>
-        <activity   android:name=".Comunication"
-                    android:theme="@style/HiddenTitleTheme"
-                    android:noHistory="true">
-        </activity>
+
         <activity   android:name=".Faq"
                     android:theme="@style/HiddenTitleTheme"
                     android:noHistory="true">
