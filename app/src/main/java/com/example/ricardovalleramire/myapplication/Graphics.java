@@ -26,7 +26,6 @@ import java.util.Date;
 import java.util.concurrent.ExecutionException;
 
 
-
 public class Graphics extends AppCompatActivity {
 
     public static TextView time;
