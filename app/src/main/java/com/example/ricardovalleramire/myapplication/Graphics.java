@@ -27,7 +27,7 @@ import java.util.concurrent.ExecutionException;
 
 
 
-class Graphics extends AppCompatActivity {
+public class Graphics extends AppCompatActivity {
 
     public static TextView time;
     public static TextView pm;

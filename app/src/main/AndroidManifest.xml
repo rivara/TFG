@@ -21,7 +21,7 @@
                     android:theme="@style/HiddenTitleTheme"
                     android:noHistory="true">
         </activity>
-        <activity   android:name=".Statistics"
+        <activity   android:name=".Stadistics"
                     android:theme="@style/HiddenTitleTheme"
                     android:noHistory="true">
         </activity>
